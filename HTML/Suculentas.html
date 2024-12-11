@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="../CSS/estilos.css">
+  <link rel="stylesheet" href="../CSS/vivero.css">
+  <link rel="stylesheet" href="../CSS/ajustarimg.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <title>Suculentas</title>
+</head>
+<body>
+
+  <div class="header-container">
+    <header>
+      <h1>VIVERO COLIBRIS</h1>
+      <img src="../IMG/logo.jpg" id="logo" width="150" alt="Logo">
+      <p><b>Donde florecen los sueños</b></p>
+    </header>
+  <nav class="nav">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </label>
+    <ul class="list">
+      <li class="list_item">
+        <div class="list_button">
+            <img src="..\ASSETS\home.svg" class="list_img">
+            <a href="../index.html" class="nav_link">INICIO</a>
+        </div>
+      </li>
+
+
+      <li>
+        <div class="list_button">
+          <img src="..\ASSETS\galeria.svg" class="list_img">
+          <a href="..\index.html#galeria" class="nav_link">GALERÍA</a>
+      </div>
+        </li>
+
+      <li class="list_item list_item--click">
+        <div class="list_button list_button--click">
+          <img src="..\ASSETS\categ.svg" class="list_img"> 
+          <a href="#" class="nav_link">CATEGORIAS</a>
+          <img  src="..\ASSETS\arrow.svg" class="list_arrow"> 
+        </div>
+        <ul class="list_show">
+            <li class="list_inside">
+                <a href="../HTML/Arboles.html" class="nav_link nav_link--inside">Arboles frutales</a>
+              </li>
+              <li class="list_inside">
+                <a href="../HTML/Rosas.html" class="nav_link nav_link--inside">Rosas</a>
+              </li>
+              <li class="list_inside">
+                <a href="../HTML/Suculentas.html" class="nav_link nav_link--inside">Suculentas</a>
+              </li>
+              <li class="list_inside">
+                <a href="../HTML/Palm.html" class="nav_link nav_link--inside">Palmeras</a>
+              </li>
+            </li>
+            <li class="list_inside">
+              <a href="../HTML/Herb.html" class="nav_link nav_link--inside">Herbaceas</a>
+            </li>
+          </li>
+          <li class="list_inside">
+            <a href="../HTML/Orqui.html" class="nav_link nav_link--inside">Orquideas</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+  </nav>
+
+      
+    <div class="gallery" id="galeria">
+      <h2>Plantas suculentas</h2><br>
+      <ul class="list-unstyled">
+          <li>
+            <img src="../IMG/cactus.png" alt="Cactus" class="imagen-ajustada">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-html="true" data-placement="top" 
+            title="Caracteristicas:<br><br> Plantas suculentas con tallos carnosos y espinas, pertenecientes a la familia Cactaceae.
+            <br><br>Cuidados:<br>Luz: Pleno sol<br>Riego: Escaso<br>Temperatura: Prefieren climas cálidos y secos.">Cactus</button>
+          </li>
+
+          <li>
+            <img src="../IMG/abundancia.png" alt="Arbol de la abundancia" class="imagen-ajustada">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-html="true" data-placement="top" 
+            title="Caracteristicas:<br><br>  Suculenta con tallos leñosos y hojas pequeñas y carnosas.
+            <br><br>Cuidados:<br>Luz: Pleno sol a sombra parcial<br>Riego: Moderado<br>Temperatura: Prefieren climas calidos.">Árbol de la<br> abundancia</button>
+          </li>
+
+          <li>
+            <img src="../IMG/burrito.png" alt="Burrito" class="imagen-ajustada">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-html="true" data-placement="top" 
+            title="Caracteristicas:<br><br> Suculenta con tallos colgantes y hojas carnosas en forma de lágrima.
+            <br><br>Cuidados:<br>Luz: Indirecta brillante<br>Riego: Moderado<br>Temperatura: Prefieren temperaturas calidas.">Burrito</button>
+          </li>
+      </ul>
+  </div>
+
+  <!-- Incluir jQuery y Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script>
+      $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+      })
+  </script>
+              
+              
+    <script src="../JS/main.js"></script>
+</body>
+</html>

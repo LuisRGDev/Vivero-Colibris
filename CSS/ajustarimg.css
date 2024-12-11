@@ -1,0 +1,4 @@
+.imagen-ajustada {
+    width: 120px; /* Ajustar la anchura del contenedor */
+    height: 120px; /* Ajustar la altura automáticamente para mantener la proporción */
+}

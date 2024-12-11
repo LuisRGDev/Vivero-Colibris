@@ -1,0 +1,280 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  margin: 20px auto;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 100%;
+}
+
+h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.contacto {
+  background-color: #0e4b18;
+  padding: 20px;
+  color: #ffffff; /* Asegúrate de que el texto sea legible */
+  width: 100%; /* Asegura que el div ocupe el 100% del ancho */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total del elemento */
+  text-align: center; /* Centra el texto */
+  font-family: Arial, sans-serif;
+}
+
+.contacto h2 {
+  margin-bottom: 10px;
+  font-size: 1.6em;
+  display: inline-block; /* Permite aplicar padding y ajustar el subrayado */
+  border-bottom: 2px solid #fafafa; /* Subraya con una línea delgada */
+  padding-bottom: 2px; /* Añade espacio entre el texto y la línea */
+}
+
+.contacto p {
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.contacto ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0;
+}
+
+.contacto li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.contacto li:before {
+  content: "• "; /* Añade un punto personalizado antes de cada elemento */
+  color: #131313; /* Color del punto */
+}
+
+.creditos{
+  background-color: #10c02d;
+  padding: 20px;
+  color: #ffffff; /* Asegúrate de que el texto sea legible */
+  width: 100%; /* Asegura que el div ocupe el 100% del ancho */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total del elemento */
+  text-align: center; /* Centra el texto */
+  font-style: italic;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Media queries for small mobile devices (360 x 640 px) */
+@media (max-width: 360px) {
+  .container {
+      padding: 10px;
+  }
+
+  form {
+      margin: 10px auto;
+      max-width: 300px;
+      padding: 10px;
+  }
+
+  input[type="text"],
+  textarea {
+      padding: 5px;
+      margin: 2px 0;
+  }
+
+  input[type="submit"] {
+      padding: 10px 15px;
+  }
+
+  .contacto {
+      padding: 10px;
+  }
+
+  .contacto h2 {
+      font-size: 1.2em;
+  }
+
+  .contacto p {
+      margin-bottom: 10px;
+      font-size: 0.8em;
+  }
+
+  .contacto li {
+      margin-bottom: 5px;
+      font-size: 0.8em;
+  }
+
+  .creditos {
+      padding: 10px;
+      font-size: 0.8em;
+  }
+}
+
+/* Media queries for medium mobile devices (375 x 667 px) */
+@media (min-width: 361px) and (max-width: 375px) {
+  .container {
+      padding: 15px;
+  }
+
+  form {
+      margin: 15px auto;
+      max-width: 350px;
+      padding: 15px;
+  }
+
+  input[type="text"],
+  textarea {
+      padding: 10px;
+      margin: 5px 0;
+  }
+
+  input[type="submit"] {
+      padding: 15px 20px;
+  }
+
+  .contacto {
+      padding: 15px;
+  }
+
+  .contacto h2 {
+      font-size: 1.4em;
+  }
+
+  .contacto p {
+      margin-bottom: 15px;
+      font-size: 1em;
+  }
+
+  .contacto li {
+      margin-bottom: 10px;
+      font-size: 1em;
+  }
+
+  .creditos {
+      padding: 15px;
+      font-size: 1em;
+  }
+}
+
+/* Media queries for large mobile devices (720 x 1280 px) */
+@media (min-width: 376px) {
+  .container {
+      padding: 20px;
+  }
+
+  form {
+      margin: 20px auto;
+      max-width: 400px;
+      padding: 20px;
+  }
+
+  input[type="text"],
+  textarea {
+      padding: 10px;
+      margin: 5px 0;
+  }
+
+  input[type="submit"] {
+      padding: 15px 20px;
+  }
+
+  .contacto {
+      padding: 20px;
+  }
+
+  .contacto h2 {
+      font-size: 1.6em;
+  }
+
+  .contacto p {
+      margin-bottom: 15px;
+      font-size: 1em;
+  }
+
+  .contacto li {
+      margin-bottom: 10px;
+      font-size: 1em;
+  }
+
+  .creditos {
+      padding: 20px;
+      font-size: 1em;
+  }
+}
+
+
+@media (max-width: 952px){
+  nav ul li a{
+      font-size: 16px;
+  }
+}
+
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+    position: absolute; /* Fijado a la izquierda */
+    left: 0; /* Pegado a la izquierda */
+    top: 0; /* Pegado arriba */
+}
+  
+nav ul {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('fondo.jpg') no-repeat center center;
+  background-size: cover;
+  top: 50px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+  flex-direction: column;
+  overflow-y: auto;
+  filter: brightness(1.2); /* Agregamos el efecto de desenfoque y brillo */
+}
+
+nav ul li {
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+
+
+nav ul li a {
+    font-size: 20px;
+    z-index: 1; /* Aseguramos que esté por encima del pseudo-elemento */
+}
+
+  #check:checked ~ ul {
+      left: 0;
+  }
+}
